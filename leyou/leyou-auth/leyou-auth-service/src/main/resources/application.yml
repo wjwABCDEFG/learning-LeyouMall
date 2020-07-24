@@ -1,0 +1,20 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: auth-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    registry-fetch-interval-seconds: 5      # 需要用feign拉取别人的微服务就可以配置这个
+  instance:
+    lease-renewal-interval-in-seconds: 5    # 最好都配一下
+    lease-expiration-duration-in-seconds: 15
+leyou:
+  jwt:
+    secret: leyou@Login(Auth}*^31)&Wjw% # 登录校验的密钥，即盐，随便写越复杂越好
+    pubKeyPath: C:\Users\wjw\.leyoursa\rsa.pub # 公钥地址
+    priKeyPath: C:\Users\wjw\.leyoursa\rsa.pri # 私钥地址
+    expire: 30 # 过期时间,单位分钟
+    cookieName: LY_TOKEN
