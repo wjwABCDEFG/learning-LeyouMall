@@ -62,8 +62,8 @@
 后端技术：
 
 - spring核心：SpringBoot-2.0.7
-- 持久层框架：MyBatis3
 - 分布式框架：Spring Cloud-Finchley.SR2
+- 持久层框架：MyBatis3
 - Nosql：Redis-5.0.5
 - 消息队列技术：RabbitMQ-3.6.10
 - 全文搜索引擎：Elasticsearch-5.6.8
